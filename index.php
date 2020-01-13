@@ -1,5 +1,11 @@
 <?php
 
-$greeting = 'Hello World';
+$greeting = 'Hello World'; // <?php echo"...
+
+$task = [
+    'task' => 'homework',
+    'due' => 'today',
+    'completed' => false,
+];
 
 require 'index.view.php';

@@ -1,24 +1,21 @@
 <!DOCKTYPE html>
-    <html lang="en">
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laracast PHP</title>
+</head>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Document</title>
-        <style>
-            header {
-                background: #e3e3e3;
-                padding: 2cm;
-                text-align: center;
-            }
-        </style>
-    </head>
+<body>
+    <h1>Task of the day</h1>
+    <ul>
+        <?php foreach ($task as $heading => $value): ?>
+        <li>
+            <strong><?=ucwords($heading);?></strong> : <?=$value?>
+        </li>
+        <?php endforeach;?>
+    </ul>
+    </h1>
+</body>
 
-    <body>
-        <header>
-            <h1>
-                <?= $greeting; ?>
-            </h1>
-        </header>
-    </body>
+</html>
 
-    </html>

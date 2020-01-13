@@ -3,8 +3,9 @@
 $greeting = 'Hello World'; // <?php echo"...
 
 $task = [
-    'task' => 'homework',
+    'title' => 'homework',
     'due' => 'today',
+    'assigned' => 'me',
     'completed' => false,
 ];
 

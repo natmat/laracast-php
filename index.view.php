@@ -8,11 +8,21 @@
 <body>
     <h1>Task of the day</h1>
     <ul>
-        <?php foreach ($task as $heading => $value): ?>
         <li>
-            <strong><?=ucwords($heading);?></strong> : <?=$value?>
+            <strong>Name: </strong> <?=$task['task'];?>
         </li>
-        <?php endforeach;?>
+
+        <li>
+            <strong>Due: </strong> <?=$task['due'];?>
+        </li>
+
+        <li>
+            <strong>Responsible: </strong> <?=$task['assigned'];?>
+        </li>
+
+        <li>
+            <strong>Status: </strong> <?=$task['completed'] ? 'Done' : 'Not done';?>
+        </li>
     </ul>
     </h1>
 </body>

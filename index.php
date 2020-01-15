@@ -9,4 +9,5 @@ $task = [
     'completed' => false,
 ];
 
-require 'index.view.php';
+// require 'index.view.php';
+require 'lesson10.php';

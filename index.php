@@ -2,43 +2,12 @@
 
 require "functions.php";
 
-$greeting = 'Hello World'; // <?php echo"...
+echo "PHP PDO";
 
-class Task
-{
-    protected $description;
-    protected $completed = false;
-
-    public function __construct($description)
-    {
-        echo "ctor";
-        $this->description = $description;
-    }
-
-    public function description()
-    {
-        return $this->description;
-    }
-
-    public function isCompleted()
-    {
-        return $this->completed;
-    }
-
-    public function complete()
-    {
-        $hits->completed = true;
-    }
+try {
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname:test', 'root', '');
+} catch (PDOException $e) {
+    die('Could not connect');
 }
 
-$task = [
-    new Task('Exercise'), // This is the description
-    new Task('Running'),
-    new Task('Cycling'),
-];
-
-$task[0] . complete();
-
-// dd($task);
-
-require 'index.view.php';
+#require 'index.view.php';

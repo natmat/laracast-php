@@ -1,13 +1,8 @@
 <?php
 
-require "functions.php";
+require 'Task.php';
 
-echo "PHP PDO";
+$query = require 'bootstrap.php';
+$tasks = $query->selectAll('todos');
 
-try {
-    $pdo = new PDO('mysql:host=127.0.0.1;dbname:test', 'root', '');
-} catch (PDOException $e) {
-    die('Could not connect');
-}
-
-#require 'index.view.php';
+require 'index.view.php';

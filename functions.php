@@ -8,13 +8,3 @@ function dd($data)
     die();
     echo '</pre>';
 };
-
-// Check if age > 21
-function allowEntry($age)
-{
-    if ($age > 21) {
-        return true;
-    } else {
-        return false;
-    }
-}

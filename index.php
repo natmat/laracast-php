@@ -1,5 +1,7 @@
 <?php
 
+$database = require 'bootstrap.php'
+
 require 'Task.php';
 
 $query = require 'bootstrap.php';

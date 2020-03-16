@@ -2,6 +2,10 @@
 
 require 'database/Connections.php';
 require 'database/QueryBuilder.php';
-require 'Task.php';
 
-return new QueryBuilder(Connection::make());
+// $pdo = Connection::make();
+// $query = new QueryBuilder($pdo);
+
+return new QueryBuilder(
+    Connection::make()
+);

@@ -1,12 +1,8 @@
 <?php
 
-require 'Task.php';
-require 'database/QueryBuilder.php';
-require 'database/Connection.php';
+$query = require 'bootstrap.php';
 
-// $pdo = Connection::make();
-$pdo = new Connection();
-$query = new QueryBuilder($pdo);
+require 'Task.php';
 
 $tasks = $query->selectAll('todos');
 

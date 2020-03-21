@@ -20,8 +20,11 @@ function fetchAllTasks($pdo)
 // echo param and die
 function dd($data)
 {
-    echo '<pre>';
-    var_dump($data);
-    die();
-    echo '</pre>';
+    echo '<pre>' . var_export($data, true) . '</pre>';
+
+    // echo '<pre>';
+    // var_dump($data);
+    // echo '</pre>';
+
+    // die();
 };
